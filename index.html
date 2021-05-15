@@ -11,17 +11,15 @@
             center: new google.maps.LatLng(40.678000, -73.905000)
         });
 
-        new google.maps.DirectionsService().route({
-            origin: new google.maps.LatLng(12.973680, 79.164573),
-            destination: new google.maps.LatLng(12.969105, 79.155828),
-            waypoints: [
-                {location: new google.maps.LatLng(12.972030, 79.159184), stopover: false},
-            ],
-            travelMode: "WALKING"
-        }, function(response, status) {
-            if (status == google.maps.DirectionsStatus.OK) {
-                new google.maps.DirectionsRenderer({map: map}).setDirections(response);
-            }
+        new google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FF0000',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(40.678048, -73.944474),
+            radius: 10
         });
 
         new google.maps.DirectionsService().route({
