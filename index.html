@@ -418,6 +418,158 @@
             radius: 10
         });
 
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.97368, 79.164573),
+            radius: 10
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.969105, 79.155828),
+            radius: 10
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.969207, 79.157698),
+            radius: 10
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.969338, 79.15826),
+            radius: 10
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.96824, 79.156738),
+            radius: 10
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.970964, 79.161352),
+            radius: 10
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.97368, 79.164573),
+            radius: 10
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.969105, 79.155828),
+            radius: 10
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.969207, 79.157698),
+            radius: 10
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.969338, 79.15826),
+            radius: 10
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.96824, 79.156738),
+            radius: 10
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000A2B',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#000A2B',
+            fillOpacity: 0.3,
+            map: map,
+            center: new google.maps.LatLng(12.970964, 79.161352),
+            radius: 10
+        });
+
+        new google.maps.DirectionsService().route({
+            origin: new google.maps.LatLng(12.973680, 79.164573),
+            destination: new google.maps.LatLng(12.970964, 79.161352),
+            travelMode: "DRIVING"
+        }, function(response, status) {
+            if (status == google.maps.DirectionsStatus.OK) {
+                new google.maps.DirectionsRenderer({map: map}).setDirections(response);
+            }
+        });
+
+        new google.maps.DirectionsService().route({
+            origin: new google.maps.LatLng(12.973680, 79.164573),
+            destination: new google.maps.LatLng(12.970964, 79.161352),
+            travelMode: "DRIVING"
+        }, function(response, status) {
+            if (status == google.maps.DirectionsStatus.OK) {
+                new google.maps.DirectionsRenderer({map: map}).setDirections(response);
+            }
+        });
+
         new google.maps.DirectionsService().route({
             origin: new google.maps.LatLng(12.973680, 79.164573),
             destination: new google.maps.LatLng(12.970964, 79.161352),
