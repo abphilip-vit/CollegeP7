@@ -19,7 +19,21 @@
             fillOpacity: 0.3,
             map: map,
             center: new google.maps.LatLng(40.678048, -73.944474),
-            radius: 10
+            radius: 50
+        });
+
+        new google.maps.DirectionsService().route({
+            origin: new google.maps.LatLng(40.683612, -73.976498),
+            destination: new google.maps.LatLng(40.675965, -73.905801),
+            waypoints: [
+                {location: new google.maps.LatLng(40.678048, -73.944474), stopover: false},
+                {location: new google.maps.LatLng(40.669179, -73.931062), stopover: false},
+            ],
+            travelMode: "WALKING"
+        }, function(response, status) {
+            if (status == google.maps.DirectionsStatus.OK) {
+                new google.maps.DirectionsRenderer({map: map}).setDirections(response);
+            }
         });
 
         new google.maps.DirectionsService().route({
