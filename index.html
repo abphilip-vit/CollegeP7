@@ -7,8 +7,8 @@
 <script type="text/javascript">
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
-            zoom: 17,
-            center: new google.maps.LatLng(12.973600, 79.164500)
+            zoom: 12,
+            center: new google.maps.LatLng(40.678000, -73.905000)
         });
 
         new google.maps.DirectionsService().route({
@@ -16,6 +16,20 @@
             destination: new google.maps.LatLng(12.969105, 79.155828),
             waypoints: [
                 {location: new google.maps.LatLng(12.972030, 79.159184), stopover: false},
+            ],
+            travelMode: "WALKING"
+        }, function(response, status) {
+            if (status == google.maps.DirectionsStatus.OK) {
+                new google.maps.DirectionsRenderer({map: map}).setDirections(response);
+            }
+        });
+
+        new google.maps.DirectionsService().route({
+            origin: new google.maps.LatLng(40.683612, -73.976498),
+            destination: new google.maps.LatLng(40.675965, -73.905801),
+            waypoints: [
+                {location: new google.maps.LatLng(40.678048, -73.944474), stopover: false},
+                {location: new google.maps.LatLng(40.669179, -73.931062), stopover: false},
             ],
             travelMode: "WALKING"
         }, function(response, status) {
