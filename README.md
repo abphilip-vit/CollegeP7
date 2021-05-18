@@ -10,5 +10,5 @@ This project is about analyzing crowd movement, as well as the vehicles present 
 
 # Authors
 
-**DSR Madhumita** - 18BIS0030
-**Allen Ben Philipose** - 18BIS0043
+- **DSR Madhumita** - 18BIS0030
+- **Allen Ben Philipose** - 18BIS0043
