@@ -11,4 +11,4 @@ This project is about analyzing crowd movement, as well as the vehicles present 
 # Authors
 
 #### [``DSR Madhumita``](https://github.com/madhumita-beep) - 18BIS0030
-#### [``Allen Ben Philipose``](https://abphilip.me/) - 18BIS0043
+#### [``Allen Ben Philipose``](https://allen.iykk.in/) - 18BIS0043
